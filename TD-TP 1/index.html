@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD-TP 1</title>
+</head>
+<body>
+    <header>
+        <h1>Gestion de covoiturage</h1>
+    </header>
+    <main>
+        <div>
+            <label for="departure">Ville de départ:</label>
+            <input type="text" id="departure" name="departure" required><br><br>
+
+            <label for="arrival">Ville d'arrivée:</label>
+            <input type="text" id="arrival" name="arrival" required><br><br>
+
+            <label for="seats">Nombre de places disponibles:</label>
+            <input type="text" id="seats" name="seats" required><br><br>
+
+            <button id="submitBtn">Proposer un trajet</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+        <div>
+            <h2>Résumé:</h2>
+            <div id="resume"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

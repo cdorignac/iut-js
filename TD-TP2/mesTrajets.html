@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD TP 2</title>
+</head>
+<body>
+    <h1>Gestion de covoiturage</h1>
+    <form class="form-mes-trajets">
+        <label for="depart">Ville de départ:</label>
+        <input type="text" id="depart" name="depart" required><br><br>
+
+        <label for="arrivee">Ville d'arrivée:</label>
+        <input type="text" id="arrivee" name="arrivee" required><br><br>
+
+        <label for="places">Nombre de places disponibles:</label>
+        <input type="text" id="places" name="places" required><br><br>
+
+        <button id="btnAjouterTrajet">Ajouter le trajet</button>
+    </form>
+    <div>
+        <div class="villes">
+            Mes villes de départ et d'arrivée
+            <select></select>
+        </div>
+        <br>
+        <div class="filtre">
+            <label for="villeFiltre">Filtrer par ville :</label>
+            <input type="text" id="villeFiltre" name="villeFiltre" placeholder="Ex : Paris"><br>
+            <button type="button" id="btnFiltrer">Filtrer</button>
+        </div>
+    </div>
+    <div class="trajets"></div>
+
+    <script src="common/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
